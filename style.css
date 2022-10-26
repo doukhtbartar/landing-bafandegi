@@ -171,6 +171,33 @@ footer .wrap {
     flex: 0 1 auto;
 }
 
+.carousel-control-next {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    right: -5%;
+}
+
+.carousel-control-prev {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    left: -5%;
+}
+
+.carousel-control-next-icon{
+    background-color: #da8c36;
+}
+
+.carousel-control-prev-icon{
+    background-color: #da8c36;
+}
 
 /* Aparat video */
 iframe {
@@ -184,6 +211,12 @@ iframe {
 @media (min-width: 1200px){
     .hero-section .headline {
         font-size: 4.5em;
+    }
+    .carousel-control-next {
+        right: -2%;
+    }
+    .carousel-control-prev {
+        left: -2%;
     }
 }
 
@@ -201,8 +234,14 @@ iframe {
     }
     .vr {
         margin-top: 0;
-        margin-bottom: 0;
         margin-left: 2rem;
         margin-right: 2rem;
+        width: -webkit-fill-available;
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+    .carousel-control-prev {
+        left: 0;
     }
 }
