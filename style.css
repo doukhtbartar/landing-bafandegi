@@ -199,15 +199,6 @@ footer .wrap {
     background-color: #da8c36;
 }
 
-/* Aparat video */
-iframe {
-    border-radius: 10px;
-}
-.romeo-aparat .romeo-embed-main-frame .romeo-embed-inner .romeo-embed-play {
-    background: rgb(255 255 255 / 80%);
-    transition: all 300ms ease-out;
-}
-
 @media (min-width: 1200px){
     .hero-section .headline {
         font-size: 4.5em;
@@ -244,4 +235,58 @@ iframe {
     .carousel-control-prev {
         left: 0;
     }
+}
+
+.video-container {
+    width: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-container .video-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+  
+.play-button-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+  
+.play-button-wrapper #circle-play-b {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.play-button-wrapper #circle-play-b svg {
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    stroke: #fff;
+    cursor: pointer;
+    background-color: #e28c26;
+    border-radius: 50%;
+    opacity: 0.9;
 }
